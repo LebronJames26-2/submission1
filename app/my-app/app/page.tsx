@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AnchorProvider, Program, web3 } from "@coral-xyz/anchor";
 import { PublicKey } from "@metaplex-foundation/js";
 
-export const order_IDL = require('/workspaces/sbc-workspace/order/app/my-app/app/idl.json');
+import order_IDL from '/workspaces/sbc-workspace/order/app/my-app/app/idl.json';
 
 export default function Home() {
   const [connectedWallet, setconnectedWallet] = useState<null | string>(null);
